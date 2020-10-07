@@ -6,6 +6,7 @@ tags:
  - 开关电源
 mathjax: true
 ---
+# buck电源有效值电流计算
 
 ## buck 电路如下图：
 
@@ -14,8 +15,10 @@ mathjax: true
 下面开始分析不同阶段的整流、续流电流有效值。
 <!-- more -->
 
-令$\Delta I = I_p-I_v$,也就是峰峰值，且假定上管开通的瞬间为0时刻，也是电流谷值$I_v$点，那么$T_{on}$阶段，有：
-$$I=I_{out}-\frac{\Delta{I}}{2}+\frac{\Delta{I}}{T_{on}}t$$
+令$$\Delta I = I_p-I_v$$,也就是峰峰值，且假定上管开通的瞬间为0时刻，也是电流谷值$$I_v$$点，那么$$T_{on}$$阶段，有：
+$$
+{I=I_{out}-\frac{\Delta{I}}{2}+\frac{\Delta{I}}{T_{on}}t}
+$$
 
 所以有：
 
@@ -32,28 +35,28 @@ $$\begin{align}
 &= (I_{out}^2+\frac{1}{12}\Delta{I}^2)T_{on}
 \end{align}$$
 
-所以在$T_{on}$阶段(单纯这一小阶段，而不是整个开关周期)：
+所以在$$T_{on}$$阶段(单纯这一小阶段，而不是整个开关周期)：
 $$\begin{align}
 I_{rms\_on}&=\sqrt{\frac{\int_{0}^{Ton}I^2\mathrm{d}t}{T_{on}}}\\
 &=\sqrt{I_{out}^2+\frac{1}{12}\Delta{I}^2}
 \end{align}$$
 
-输入开关管(上管)的电流有效值为（在一整个开关周期$T_S$内的有效值电流）：
+输入开关管(上管)的电流有效值为（在一整个开关周期$$T_S$$内的有效值电流）：
 $$\begin{align}
 I_{rms\_up}&=\sqrt{\frac{\int_{0}^{Ton}I^2\mathrm{d}t}{T_s}}\\
 &=\sqrt{(I_{out}^2+\frac{1}{12}\Delta{I}^2)D}
 \end{align}$$
 
-同理，在$T_{off}$内：
+同理，在$$T_{off}$$内：
 $$\int_{0}^{Toff}I^2\mathrm{d}t=(I_{out}^2+\frac{1}{12}\Delta{I}^2)T_{off}$$
 
-所以在$T_{off}$阶段(单纯这一小阶段，而不是整个开关周期)：
+所以在$$T_{off}$$阶段(单纯这一小阶段，而不是整个开关周期)：
 $$\begin{align}
 I_{rms\_off}&=\sqrt{\frac{\int_{0}^{Toff}I^2\mathrm{d}t}{T_{off}}}\\
 &=\sqrt{I_{out}^2+\frac{1}{12}\Delta{I}^2}
 \end{align}$$
 
-下管电流有效值（在一整个开关周期$T_{S}$内的有效值电流）：
+下管电流有效值（在一整个开关周期$$T_{S}$$内的有效值电流）：
 $$\begin{align}
 I_{rms\_dowm}&=\sqrt{\frac{\int_{0}^{Toff}I^2\mathrm{d}t}{T_s}}\\
 &=\sqrt{(I_{out}^2+\frac{1}{12}\Delta{I}^2)(1-D)}
