@@ -84,10 +84,10 @@ $$
 
 输出电感电流有效值，就是整个开关周期内的输出电流有效值：
 $$
-\begin{aligned}
+\begin{align}
 I_{rms}&=\sqrt{\frac{\int_{0}^{Ton}I^2\mathrm{d}t+\int_{0}^{Toff}I^2\mathrm{d}t}{T_s}}\\
 &=\sqrt{I_{out}^2+\frac{1}{12}\Delta{I}^2} \tag{1.0}
-\end{aligned}
+\end{align}
 $$
 
 ## The END
