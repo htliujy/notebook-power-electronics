@@ -6,9 +6,12 @@ tags:
  - 开关电源
 mathjax: true
 ---
+
 # buck电源有效值电流计算
 
-## buck 电路如下图：
+如题，本文主要说buck电源有效值电流计算
+
+## buck 电路如下图
 
 <div  align="center">
 <img src="./buck电源有效值电流计算/figure1_buck_current.png" width = "50%" height = "50%" alt="buck电路拓扑" align=center />
@@ -28,7 +31,6 @@ $$
 $$
 {I^2 =I_{out}^2+(\frac{\Delta{I}}{2})^2+(\frac{\Delta{I}}{T_{on}})^2t^2-I_{out}\Delta{I}+\frac{2I_{out}\Delta{I}}{T_{on}}t-\frac{\Delta{I}^2}{T_{on}}t}
 $$
-
 
 对电流的平方进行积分，得到：https://mp.weixin.qq.com/s/c09U4FgxR5UwMEnbkZMCng
 
