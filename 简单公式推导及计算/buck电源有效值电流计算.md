@@ -32,7 +32,7 @@ $$
 {I^2 =I_{out}^2+(\frac{\Delta{I}}{2})^2+(\frac{\Delta{I}}{T_{on}})^2t^2-I_{out}\Delta{I}+\frac{2I_{out}\Delta{I}}{T_{on}}t-\frac{\Delta{I}^2}{T_{on}}t}
 $$
 
-对电流的平方进行积分，得到：https://mp.weixin.qq.com/s/c09U4FgxR5UwMEnbkZMCng
+对电流的平方进行积分，得到：
 
 $$
 \begin{aligned}
