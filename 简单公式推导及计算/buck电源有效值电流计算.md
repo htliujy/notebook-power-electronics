@@ -1,12 +1,3 @@
----
-title: buck电源有效值电流计算
-date: 2020/05/16 12:35:46
-categories: 技术杂谈
-tags:
- - 开关电源
-mathjax: true
----
-
 # buck电源有效值电流计算
 
 如题，本文主要说buck电源有效值电流计算
