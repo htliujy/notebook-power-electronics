@@ -33,3 +33,5 @@
 - 化学材料测试：撕裂的Propagation
 - MOS 管电流饱和，是因为沟道夹断还是电子迁移率达到了最大值？
 - FOM (Figure of Merit)如何判定半导体的优劣？
+- MOS datasheet解读。
+- 反激拓扑设计，[零基础带你了解反激变换器](https://www.eefocus.com/analog-power/469103)
